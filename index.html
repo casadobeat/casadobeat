@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Casa do Beat - Pedido de Capas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Casa do Beat</h1>
+    <p>Peça sua capa personalizada para single!</p>
+  </header>
+
+  <main>
+    <form id="pedidoForm">
+      <label for="nome">Seu nome ou nome artístico:</label><br/>
+      <input type="text" id="nome" name="nome" required /><br/><br/>
+
+      <label for="tipo">Tipo de arte:</label><br/>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="single">Capa para Single</option>
+        <option value="divulgacao">Arte para Divulgação</option>
+        <option value="outro">Outro</option>
+      </select><br/><br/>
+
+      <label for="descricao">Descreva sua ideia / referência:</label><br/>
+      <textarea id="descricao" name="descricao" rows="4" required></textarea><br/><br/>
+
+      <label for="imagem">Envie sua imagem de referência:</label><br/>
+      <input type="file" id="imagem" name="imagem" accept="image/*" /><br/><br/>
+
+      <button type="submit">Enviar Pedido</button>
+    </form>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

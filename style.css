@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #121212;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background-color: #1db954;
+  color: white;
+  cursor: pointer;
+}
